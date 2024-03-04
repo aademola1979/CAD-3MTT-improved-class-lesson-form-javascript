@@ -7,19 +7,49 @@
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
     display: grid;
-    min-width: 100vw;
-    max-width: 100vw;
-    gap:1rem;
+    grid-template-columns: auto;
+    width: 100%;
+    justify-content: center;
+    padding-inline: 1rem;
+    
 }
 
 #form-section{
-    background-color: rgb(240, 240, 240);
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    padding-block: 2rem;  
+    padding: 1rem 2rem;
+    height: 500px;
+    position: sticky;
+    width: 100%;
+    background-color: rgba(134, 134, 250, 1);
+    border-radius: 0%
+
+
+}
+
+#intro{
+    color: white;
+   
+}
+
+form{
+    
+    min-width: 100%;
+}
+
+#display-section{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+
 }
 
 
@@ -28,17 +58,17 @@ form{
     gap: 0.5;
     background-color: #ffffff;
     padding-inline: 1rem;
-    width: 100%;
+    width: 80%;
     padding-top: 1rem;
     padding-bottom: 2rem;
     border-radius: 5px;
 }
 
-h1{ 
+#intro h1{ 
     font-size: 1.2rem;
 }
 
-p{
+#intro p{
     font-size: 1rem;
     margin-bottom: 1rem;
 }
@@ -47,9 +77,10 @@ p{
 
 .content-container{
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     background-color: white;
 }
+
 .content-container > div{
     display: grid;
     gap: 0.5rem;
@@ -66,6 +97,7 @@ input{
     border: 2px solid rgba(134, 134, 250, 1);
     outline: none;
     padding: 15px;
+   
     
 }
 
@@ -74,11 +106,12 @@ textarea{
     border-radius: 5px;
     border: 2px solid rgba(134, 134, 250, 1);
     padding: 15px;
+   
 }
 
 button{
     
-    width: 100%;
+
     border-radius: 5px;
     background-color: rgba(27, 29, 105, 0.973);
     outline: none;
@@ -99,21 +132,12 @@ textarea:focus, input:focus{
     border: 2px solid rgba(0, 0, 250, 0.7);
 }
 
-#display-section{
-    min-width: 100vw;
-    background-color: white;
-}
-#display-section{
-    display: grid;
-    gap: 1rem;
-    max-width: 100vw;
-    width: 100vw;
-    padding: 2rem;
-}
+
 
 .card{
-    width: 100vw;
-    padding: 1rem;
+   
+    width: 20rem;
+    padding: 5rem 1rem 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 5px 2px 2px 5px;
     display: grid;
     position: relative;
@@ -122,41 +146,34 @@ textarea:focus, input:focus{
 
 }
 
-@media(min-width:768px) {
-    form{
-        width: 400px;
+
+
+@media(min-width:1024px) {
+    main{
+        grid-template-columns: 500px 1fr;
+        padding-inline: 4rem;
     }
 
-    h1{ 
-        font-size: 2rem;
+    #form-section{
+        position: sticky;
+        top: 1rem;
+        border-radius: 5px;
     }
 
-    p{
-        font-size: 1.4rem;
+    #intro h1{ 
+        font-size: 1.5rem;
+    }
+    
+    #intro p{
+        font-size: 1.2rem;
+     
     }
 
-    label{
-        font-size: 1.3rem;
-    }
 
-    input{
-        height: 2rem;
-    }
 
-    button{
-        font-size: large;
-    }
 
-    #display-section{
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        padding: 2rem;
-    }
+ 
 
-    .card{
-        width: 20rem;
-    }
     
 }
 
@@ -181,6 +198,10 @@ textarea:focus, input:focus{
 
 .comment-container{
     margin-top: 1rem;
+}
+
+.name-container{
+    margin-bottom: 1rem;
 }
 
 

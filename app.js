@@ -2,8 +2,11 @@
 
 const container = document.getElementById("display-section")
 
+//This will automatically call datacollector once the page loads
+document.addEventListener('DOMContentLoaded', dataCollector() )
 
-document.addEventListener('DOMContentLoaded', function () {
+//This function collects data from the form and stores it in the localstorage
+function dataCollector () {
     const feedbackForm = document.getElementById('feedbackForm');
 
     feedbackForm.addEventListener('submit', function (event) {
@@ -71,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function () {
         comment.value = ''
     }
     )
-})
+}
 
 
-//A function to get data from the localStorage and display
+//A function to get data from the localStorage and display the data
 function display() {
 
     //Try to get database from the localstorage
@@ -158,7 +161,6 @@ function customCreateElement(type, className = "", id = "") {
 
 //Call the display function
 display()
-
 
 /*
                             WE'RE DONE!
