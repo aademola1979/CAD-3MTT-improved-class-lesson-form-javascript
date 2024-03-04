@@ -27,7 +27,7 @@ main{
     height: 500px;
     position: sticky;
     width: 100%;
-    background-color: rgba(134, 134, 250, 1);
+    background-color:rgba(134, 134, 250, 1);
     border-radius: 0%
 
 
@@ -151,7 +151,7 @@ textarea:focus, input:focus{
 @media(min-width:1024px) {
     main{
         grid-template-columns: 500px 1fr;
-        padding-inline: 4rem;
+        padding-inline: 3rem;
     }
 
     #form-section{
@@ -172,7 +172,9 @@ textarea:focus, input:focus{
 
 
 
- 
+ #display-section{
+    justify-content: start;
+ }
 
     
 }
