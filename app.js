@@ -1,4 +1,4 @@
-//Improved the copy of 2nd March, 2024 class lesson
+//The improved copy of 2nd March, 2024 class lesson
 
 /* 
 Each Browser comes with a mini-storage called localStorage.
@@ -20,10 +20,10 @@ const container = document.getElementById("display-section")
 //The function below will be automatically called once the page loads.
 //In this function, a function named customDataCollector is called.
 //Therefore, this function will call customDataCollector automatically.
-document.addEventListener('DOMContentLoaded', customDataCollector() )
+document.addEventListener('DOMContentLoaded', customDataCollector())
 
 //customDataCollector function collects data from the form and stores it in the localstorage
-function customDataCollector () {
+function customDataCollector() {
     //We get our form and store in a variable named "feedbackForm"
     const feedbackForm = document.getElementById('feedbackForm');
 
@@ -31,7 +31,7 @@ function customDataCollector () {
     //is hit/clicked, it'll call the anonymous/nameless function.
     //Many processes take place in the anonymous function.
     feedbackForm.addEventListener('submit', function (event) {
-        
+
         //This fubction stops the default behaviour of an HTML form.
         //It isn't really a big deal, as it won't break our codes if we
         //do not put it there but make sure you put it there.
@@ -171,9 +171,10 @@ function display() {
     //This is not compulsory but in our case, we're going to need something from the objectDatabase.
     //Also, note the name eachObject is given by me; you can give your own oneObject or anything.
     objectDatabase.map(
-        function(eachObject){
-            return customGenerator(eachObject, objectDatabase)}
-            )
+        function (eachObject) {
+            return customGenerator(eachObject, objectDatabase)
+        }
+    )
 }
 
 //customGenerator will go and work on eachObject.
@@ -202,7 +203,7 @@ function customCreateElement(type, className = "", id = "") {
 
 //customGenrator receives eachObject and objectDatabase.
 //It performs same operations on eachObject.
-function customGenerator(eachObject, objectDatabase){
+function customGenerator(eachObject, objectDatabase) {
 
     //For eachObject, HTML elements are created, using our customCreateElement.
     //We use the names as their classes.
@@ -212,7 +213,7 @@ function customGenerator(eachObject, objectDatabase){
     const card = customCreateElement("div", "card")
     const nameContainer = customCreateElement("h2", "name-container", `name${objectDatabase.indexOf(eachObject)}`)
     const emailContainer = customCreateElement("p", "email-container", `email${objectDatabase.indexOf(eachObject)}`)
-    const numberContainer = customCreateElement("span", "number-container", `number${objectDatabase.indexOf(eachObject)}` )
+    const numberContainer = customCreateElement("span", "number-container", `number${objectDatabase.indexOf(eachObject)}`)
     const commentContainer = customCreateElement("p", "comment-container", `comment${objectDatabase.indexOf(eachObject)}`)
 
 
