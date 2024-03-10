@@ -4,7 +4,7 @@
 
 ## Welcome!
 
-In the CAD-3MTT class lesson of 2nd March 2024, we added some javascript codes to an HTML form created in the previous class. See the repository for the previous lesson [here](https://github.com/aademola1979/CAD-3MTT-class-lesson-form-javascript). It's awesome, isn't it? However, the result of the previous lesson is that the output is displayed as an alert. The data disappears after refreshing the brower; the data does not persist. The lesson was purely a frontend lesson; hence, it ended at collecting and displaying the output through alert. I improved the previous project  to be able to persist the collected data, at least temporarily, by saving it into the localstorage on the browser?
+In the CAD-3MTT class lesson of 2nd March 2024, we added some javascript codes to an HTML form created in the previous class. See the repository for the previous lesson [here](https://github.com/aademola1979/CAD-3MTT-class-lesson-form-javascript). It's awesome, isn't it? However, the result of the previous lesson is that the output is displayed as an alert. The data disappears after refreshing the browser; the data does not persist. The lesson was purely a frontend lesson; hence, it ended at collecting and displaying the output through alert. I improved the previous project  to be able to persist the collected data, at least temporarily, by saving it into the localstorage on the browser?
 
 - **Who is this for:** A javascript beginner
 - **What you will learn:** You will learn to collect data through HTML form, store the data in the browser localstorage, retrieve the data back and send it back to HTML elements for display.
